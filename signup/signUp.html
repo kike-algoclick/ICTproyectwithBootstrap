@@ -5,6 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+     <style>
+  .login-container{
+  padding: 100px;
+  width: 50%;
+  height: 50%;
+  border-radius: 10px;
+  }
+
+  .email-message{
+    text-align: left;
+    width: 100%;
+  }
+
+  .password-message{
+    text-align: left;
+    width: 100%;
+  }
+
+</style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary p-4" id="navbar">
@@ -24,6 +44,24 @@
       </ul>
    </div>
 </nav>
+
+
+    <h4 class="text-center m-5">Bievenido a tu clinica virtual!</h4>
+<form class="text-center container-lg border login-container" id="formulario">
+
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label email-message">Correo Electronico</label>
+    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="e.g. holamundo2024@gmail.com">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label password-message">Contraseña</label>
+    <input type="password" class="form-control" id="password">
+  </div>
+
+  <button type="submit" class="btn btn-primary mb-3">Submit</button>
+
+<div>Ya tienes una cuenta?</div>
+</form>
 
 <script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
